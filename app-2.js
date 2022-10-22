@@ -16,10 +16,13 @@ function die(){
 BOX.addEventListener("click",() =>{
     // BOX.style.display=("none")
     BOX.style.backgroundImage="url(./assets/bomb.gif)"
-    setInterval(()=>{(
+    setTimeout(()=>{(
     BOX.style.backgroundImage="url(./assets/run-josh.gif)"
-)}, 2000);
-
+)}, 1700);
 });
 
 
+
+// setInterval(()=>{(
+//     BOX.style.backgroundImage="url(./assets/bomb.gif)"
+// )}, 1000);
