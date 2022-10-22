@@ -3,6 +3,9 @@ body{
 }
 #adaptative{
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
    
     
 }
@@ -10,31 +13,36 @@ body{
     border-radius: 20px;
     overflow: hidden;
     top: 200px;
-    width: 100%;
-    height: 200px;
+    width: 600px;
+    height: 280px;
     display: flex;
     background-image: url(./assets/giphy.gif);
+    background-size: cover;
     justify-content: end;
     align-items: flex-end;
    
 
 }
-#cursor{
-    width: 100%;
-    height: 30px;
-    display: flex;
-    justify-content: center ;
-    align-items: center;
-    border: solid green 1px;
+
+#p{
+    left: 330px;
+    bottom: 220px;
+    position: relative;
+    background-color: black;
+    color: red;
+    font-size: 25px;
+    font-family: 'VT323', monospace;
 }
+
 
 .cuadrado, .cuadrado2, .cuadrado3
 {
-   width: 80px;
-   height: 80px;
+   width: 150px;
+   height: 150px;
    background-repeat: no-repeat;
    background-size: contain;
    position: absolute;
+   margin-bottom: 20px;
 }
 .cuadrado{
     background-image: url(./assets/kamikaze.gif);
@@ -56,12 +64,12 @@ body{
 
 .cuadrado.moviendo{
     animation-duration: 2s;
-    z-index: 1;
+    z-index: 3;
     left: 2000px;
 }
 .cuadrado2.moviendo2{
     animation-duration: 5s;
-    z-index: 2;
+    z-index: 3;
     left: 2000px;
 }
 .cuadrado3.moviendo3{
@@ -75,7 +83,7 @@ body{
     }
     
     100% {
-        left: 200px;
+        left: 400px;
     }
 
 }
