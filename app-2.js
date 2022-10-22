@@ -18,33 +18,37 @@ BOX.addEventListener("click", function(){
     BOX.style.backgroundImage="url(./assets/bomb.gif)"
     sumar(10)
     setTimeout(()=>{(
-    BOX.style.backgroundImage="none"
+    BOX.style.zIndex='-1'
 )}, 900);
 setTimeout(()=>{(
-    BOX.style.backgroundImage="url(./assets/kamikaze.gif)"
-)}, 1500);
+    BOX.style.backgroundImage="url(./assets/kamikaze.gif)",
+    BOX.style.zIndex='3'
+)}, 1000);
 });
 
 BOX2.addEventListener("click", function(){
     BOX2.style.backgroundImage="url(./assets/bomb2.gif)"
     sumar(25)
     setTimeout(()=>{(
-    BOX2.style.backgroundImage="none"
+    BOX2.style.zIndex='-1'
 )}, 900);
 setTimeout(()=>{(
-    BOX2.style.backgroundImage="url(./assets/zombi.gif)"
-)}, 2000);
+    BOX2.style.backgroundImage="url(./assets/zombi.gif)",
+    BOX2.style.zIndex='3'
+)}, 2500);
 });
 
 BOX3.addEventListener("click", function(){
     BOX3.style.backgroundImage="url(./assets/bomb3.gif)"
     sumar(50)
-    setTimeout(()=>{(
-    BOX3.style.backgroundImage="none"
+setTimeout(()=>{(
+    BOX3.style.zIndex='-1'
 )}, 900);
 setTimeout(()=>{(
-    BOX3.style.backgroundImage="url(./assets/momia.gif)"
-)}, 2000);
+    BOX3.style.backgroundImage="url(./assets/momia.gif)",
+    BOX3.style.zIndex='3'
+)}, 1500);
+    
 });
 
 setInterval(()=>{
