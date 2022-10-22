@@ -13,40 +13,72 @@ body{
     width: 100%;
     height: 200px;
     display: flex;
-    background-color: white;
+    background-image: url(./assets/giphy.gif);
     justify-content: end;
     align-items: flex-end;
    
 
 }
-.cuadrado
-{
-   width: 100px;
-   height: 100px;
- 
-
-    /* joshi */
-   background-image: url(./assets/run-josh.gif);
-   background-repeat: round; 
-   position: absolute;
+#cursor{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    border: solid green 1px;
 }
 
-.cuadrado.moviendo {
+.cuadrado, .cuadrado2, .cuadrado3
+{
+   width: 80px;
+   height: 80px;
+   background-repeat: no-repeat;
+   background-size: contain;
+   position: absolute;
+}
+.cuadrado{
+    background-image: url(./assets/kamikaze.gif);
+}
+.cuadrado2{
+    background-image: url(./assets/zombi.gif);
+}
+.cuadrado3{
+    background-image: url(./assets/momia.gif);
+}
+
+
+.cuadrado.moviendo, .cuadrado2.moviendo2, .cuadrado3.moviendo3 {
     position: relative;
-    z-index: 3;
-    left: 1000px;
     animation-name: moving;
-    animation-duration: 3s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
+
+.cuadrado.moviendo{
+    animation-duration: 2s;
+    z-index: 1;
+    left: 2000px;
+}
+.cuadrado2.moviendo2{
+    animation-duration: 5s;
+    z-index: 2;
+    left: 2000px;
+}
+.cuadrado3.moviendo3{
+    animation-duration: 3s;
+    z-index: 3;
+}
+
 @keyframes moving{
     0% {
         left: -500px;
     }
     
     100% {
-        left: 150px;
+        left: 200px;
     }
 
+}
+p{
+    color: aliceblue;
 }
