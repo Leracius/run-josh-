@@ -14,6 +14,8 @@ mover()
 let score = 0
 sumar = (num) => score+=num
 
+
+
 BOX.addEventListener("click", function(){
     BOX.style.backgroundImage="url(./assets/bomb.gif)"
     sumar(10)
@@ -23,10 +25,11 @@ BOX.addEventListener("click", function(){
 setTimeout(()=>{(
     BOX.style.backgroundImage="url(./assets/kamikaze.gif)",
     BOX.style.zIndex='3'
-)}, 1000);
+)}, 1200);
 });
 
 BOX2.addEventListener("click", function(){
+
     BOX2.style.backgroundImage="url(./assets/bomb2.gif)"
     sumar(25)
     setTimeout(()=>{(
@@ -54,8 +57,5 @@ setTimeout(()=>{(
 setInterval(()=>{
     let contador = score
     P.innerHTML='SCORE: ' + contador
-},50)
-
-
-
+},500)
 
