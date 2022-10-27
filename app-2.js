@@ -35,7 +35,6 @@ const changeEL = ()=>{
 let score = 0
 sumar = (num) => score+=num
 
-
 BOX.addEventListener("click", function(){
     BOX.style.backgroundImage="url(./assets/bomb.gif)"
     sumar(10)

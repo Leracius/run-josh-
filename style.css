@@ -101,6 +101,7 @@ p{
     #screen{
         width: 99.5%;
         height: 200px;
+        background-size: 100% 100%;
     }
     .cuadrado, .cuadrado2, .cuadrado3{
         margin-bottom: 13px;
