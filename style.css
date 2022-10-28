@@ -12,7 +12,7 @@ body{
 #screen{
     box-sizing: border-box;
     border-radius: 20px;
-    /* overflow: hidden; */
+    overflow: hidden;
     top: 200px;
     width: 600px;
     height: 280px;
