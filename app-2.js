@@ -56,7 +56,7 @@ setTimeout(()=>{(
 });
 
 BOX2.addEventListener("click", function(){
-    BOX2.style.backgroundImage="url(./assets/explosion.gif)"
+    BOX2.style.backgroundImage="url(./assets/explosion2.gif)"
     sumar(25)
     changeEL()
     setTimeout(()=>{(
@@ -69,7 +69,7 @@ setTimeout(()=>{(
 });
 
 BOX3.addEventListener("click", function(){
-    BOX3.style.backgroundImage="url(./assets/explosion.gif)"
+    BOX3.style.backgroundImage="url(./assets/explosion3.gif)"
     sumar(50)
     changeEL()
 setTimeout(()=>{(
@@ -83,7 +83,7 @@ setTimeout(()=>{(
 });
 
 BOX4.addEventListener("click", function(){
-    BOX4.style.backgroundImage="url(./assets/explosion.gif)"
+    BOX4.style.backgroundImage="url(./assets/explosion4.gif)"
     // sumar(-250)
     changeEL()
 setTimeout(()=>{(
