@@ -83,13 +83,12 @@ setTimeout(()=>{(
 });
 
 BOX4.addEventListener("click", function(){
-    P2.innerHTML='Mataste un perro :c',
-    BOX4.style.backgroundImage="url(./assets/bomb3.gif)"
-    sumar(-500)
+    BOX4.style.backgroundImage="url(./assets/explosion.gif)"
+    // sumar(-250)
     changeEL()
 setTimeout(()=>{(
     BOX4.style.zIndex='-1'
-)}, 900);
+)}, 400);
 setTimeout(()=>{(
     BOX4.style.backgroundImage="url(./assets/perrito-1.gif)",
     BOX4.style.zIndex='3'
