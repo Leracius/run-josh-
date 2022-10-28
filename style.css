@@ -10,12 +10,14 @@ body{
     
 }
 #screen{
+    box-sizing: border-box;
     border-radius: 20px;
-    overflow: hidden;
+    /* overflow: hidden; */
     top: 200px;
     width: 600px;
     height: 280px;
     display: flex;
+    background-color: white;
     background-image: url(./assets/creepy\ forest.gif);
     background-size: contain;
     justify-content: end;
@@ -58,8 +60,18 @@ body{
     background-image: url(./assets/momia.gif);
 }
 
+.cuadrado4{
+    margin-bottom: 5px;
+    width: 60px;
+    height: 60px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* border: 1px solid blue; */
+    background-image: url(./assets/perrito-1.gif);
+    position: absolute;
+}
 
-.cuadrado.moviendo, .cuadrado2.moviendo2, .cuadrado3.moviendo3 {
+.cuadrado.moviendo, .cuadrado2.moviendo2, .cuadrado3.moviendo3{
     position: relative;
     animation-name: moving;
     animation-timing-function: linear;
@@ -81,6 +93,25 @@ body{
     animation-duration: 3s;
     z-index: 3;
     right: 300px;
+}
+.cuadrado4.moviendo4{
+    animation-duration: 6s;
+    z-index: 4;
+    position: relative;
+    animation-name: moving-2;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    background-size: cover;
+}
+
+@keyframes moving-2{
+    0% {
+        left: -1000px;
+    }
+    
+    100% {
+        left: 400px;
+    }
 }
 
 @keyframes moving{
@@ -104,7 +135,7 @@ p{
         background-size: 100% 100%;
     }
     .cuadrado, .cuadrado2, .cuadrado3{
-        margin-bottom: 13px;
+        margin-bottom: 8px;
         width: 90px;
         height: 90px;
     }
