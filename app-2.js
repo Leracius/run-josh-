@@ -43,12 +43,13 @@ let score = 0
 sumar = (num) => score+=num
 
 BOX.addEventListener("click", function(){
-    BOX.style.backgroundImage="url(./assets/explosion.gif)"
+    BOX.style.backgroundImage="url(./assets/bomb.gif)"
+    P.style.color='white'
     sumar(10)
     changeEL()
     setTimeout(()=>{(
     BOX.style.zIndex='-1'
-)}, 500);
+)}, 900);
 setTimeout(()=>{(
     BOX.style.backgroundImage="url(./assets/kamikaze.gif)",
     BOX.style.zIndex='3'
@@ -56,12 +57,13 @@ setTimeout(()=>{(
 });
 
 BOX2.addEventListener("click", function(){
-    BOX2.style.backgroundImage="url(./assets/explosion2.gif)"
+    BOX2.style.backgroundImage="url(./assets/bomb2.gif)"
+    P.style.color='white'
     sumar(25)
     changeEL()
     setTimeout(()=>{(
     BOX2.style.zIndex='-1'
-)}, 500);
+)}, 900);
 setTimeout(()=>{(
     BOX2.style.backgroundImage="url(./assets/zombi.gif)",
     BOX2.style.zIndex='3'
@@ -69,12 +71,14 @@ setTimeout(()=>{(
 });
 
 BOX3.addEventListener("click", function(){
-    BOX3.style.backgroundImage="url(./assets/explosion3.gif)"
+    P2.innerHTML='Mataste un perrito :c '
+    BOX3.style.backgroundImage="url(./assets/bomb3.gif)"
+    P.style.color='white'
     sumar(50)
     changeEL()
 setTimeout(()=>{(
     BOX3.style.zIndex='-1'
-)}, 500);
+)}, 900);
 setTimeout(()=>{(
     BOX3.style.backgroundImage="url(./assets/momia.gif)",
     BOX3.style.zIndex='3'
@@ -83,12 +87,14 @@ setTimeout(()=>{(
 });
 
 BOX4.addEventListener("click", function(){
-    BOX4.style.backgroundImage="url(./assets/explosion4.gif)"
-    // sumar(-250)
+    BOX4.style.backgroundImage="url(./assets/bomb4.gif)"
+    P.style.color='red'
+    sumar(-200)
     changeEL()
+    P2.innerHTML='Mataste un perro'
 setTimeout(()=>{(
     BOX4.style.zIndex='-1'
-)}, 400);
+)}, 900);
 setTimeout(()=>{(
     BOX4.style.backgroundImage="url(./assets/perrito-1.gif)",
     BOX4.style.zIndex='3'
