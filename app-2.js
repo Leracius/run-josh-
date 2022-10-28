@@ -43,12 +43,12 @@ let score = 0
 sumar = (num) => score+=num
 
 BOX.addEventListener("click", function(){
-    BOX.style.backgroundImage="url(./assets/bomb.gif)"
+    BOX.style.backgroundImage="url(./assets/explosion.gif)"
     sumar(10)
     changeEL()
     setTimeout(()=>{(
     BOX.style.zIndex='-1'
-)}, 900);
+)}, 500);
 setTimeout(()=>{(
     BOX.style.backgroundImage="url(./assets/kamikaze.gif)",
     BOX.style.zIndex='3'
@@ -56,12 +56,12 @@ setTimeout(()=>{(
 });
 
 BOX2.addEventListener("click", function(){
-    BOX2.style.backgroundImage="url(./assets/bomb2.gif)"
+    BOX2.style.backgroundImage="url(./assets/explosion.gif)"
     sumar(25)
     changeEL()
     setTimeout(()=>{(
     BOX2.style.zIndex='-1'
-)}, 900);
+)}, 500);
 setTimeout(()=>{(
     BOX2.style.backgroundImage="url(./assets/zombi.gif)",
     BOX2.style.zIndex='3'
@@ -69,12 +69,12 @@ setTimeout(()=>{(
 });
 
 BOX3.addEventListener("click", function(){
-    BOX3.style.backgroundImage="url(./assets/bomb3.gif)"
+    BOX3.style.backgroundImage="url(./assets/explosion.gif)"
     sumar(50)
     changeEL()
 setTimeout(()=>{(
     BOX3.style.zIndex='-1'
-)}, 900);
+)}, 500);
 setTimeout(()=>{(
     BOX3.style.backgroundImage="url(./assets/momia.gif)",
     BOX3.style.zIndex='3'
