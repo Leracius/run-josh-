@@ -66,7 +66,7 @@ body{
     height: 50px;
     background-repeat: no-repeat;
     background-size: contain;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     background-image: url(./assets/perrito-1.gif);
     position: absolute;
 }
