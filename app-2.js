@@ -87,11 +87,11 @@ setTimeout(()=>{(
 });
 
 BOX4.addEventListener("click", function(){
-    BOX4.style.backgroundImage="url(./assets/bomb4.gif)"
+    BOX4.style.backgroundImage="none"
     P.style.color='red'
     sumar(-200)
     changeEL()
-    P2.innerHTML='Mataste un perro'
+    P2.innerHTML='No!'
 setTimeout(()=>{(
     BOX4.style.zIndex='-1'
 )}, 900);
