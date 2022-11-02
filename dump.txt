@@ -1,0 +1,18 @@
+:root {
+  --primary: #4f46e5;
+  --error: #b91c1c;
+  --gray: #6b7280;
+  --white: #fff;
+  --red-card: #ff005c;
+  --violet-card: #4c1d95;
+  --black-card: #181818;
+}
+.red-card {
+  background-color: var(--red-card);
+}
+.violet-card {
+  background-color: var(--violet-card);
+}
+.black-card {
+  background-color: var(--black-card);
+}

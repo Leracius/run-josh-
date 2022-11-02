@@ -15,16 +15,14 @@ function mover(){
     BOX2.classList.add('moviendo2')
     BOX3.classList.add('moviendo3')
     BOX4.classList.add('moviendo4')
-
-
 }
 mover()
 
 const changeEL = ()=>{
     if(score<0){
         DIV_SCR.style.display='none'
-        P2.innerHTML='Tu puntuacion alcanzo un valor negativo. FIN DEL JUEGO XP'}
-    if(score>1)P2.innerHTML='Eso! Justo asi!'
+        P2.innerHTML='FIN DEL JUEGO XP'}
+    if(score>1)P2.innerHTML='Evita matar a los no enemigos'
     if(score>400)P2.innerHTML='Sigue asi!!';
     if(score>800)P2.innerHTML='800 puntos!!';
     if(score>1000)P2.innerHTML='Gracias por jugar!';
@@ -71,7 +69,6 @@ setTimeout(()=>{(
 });
 
 BOX3.addEventListener("click", function(){
-    P2.innerHTML='Mataste un perrito :c '
     BOX3.style.backgroundImage="url(./assets/bomb3.gif)"
     P.style.color='white'
     sumar(50)
@@ -91,12 +88,12 @@ BOX4.addEventListener("click", function(){
     P.style.color='red'
     sumar(-200)
     changeEL()
-    P2.innerHTML='No!'
+    if(score>1)P2.innerHTML='-200 pts'
 setTimeout(()=>{(
     BOX4.style.zIndex='-1'
 )}, 900);
 setTimeout(()=>{(
-    BOX4.style.backgroundImage="url(./assets/perrito-1.gif)",
+    BOX4.style.backgroundImage="url(./assets/chica.gif)",
     BOX4.style.zIndex='3'
 )}, 3000);
     
